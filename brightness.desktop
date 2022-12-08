@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Brightness
+GenericName=Brightness
+Icon=/usr/share/icons/brightness.png
+Exec=/usr/bin/brightness
+Terminal=false
+Categories=System
+Keywords=system;process;task

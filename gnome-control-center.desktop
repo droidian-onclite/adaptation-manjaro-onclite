@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Settings
+Icon=org.gnome.Settings
+Exec=env GSK_RENDERER=cairo gnome-control-center
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-control-center
+X-GNOME-Bugzilla-Component=shell
+X-GNOME-Bugzilla-Version=41.7
+Keywords=Preferences;Settings;
+X-Purism-FormFactor=Workstation;Mobile;

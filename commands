@@ -1,0 +1,3 @@
+rm /usr/share/applications/gnome-control-center.desktop
+rm /usr/share/applications/org.gnome.Settings.desktop
+
