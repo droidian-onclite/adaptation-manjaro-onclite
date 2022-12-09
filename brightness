@@ -1,4 +1,0 @@
-#!/bin/bash
-
-BRIGHTNESS=$(yad --title brightness --text="enter brightness level (1:255)" --text-align=center --entry)
-echo $BRIGHTNESS | pkexec tee /sys/class/leds/lcd-backlight/brightness
