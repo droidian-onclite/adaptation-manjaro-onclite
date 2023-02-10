@@ -1,4 +1,9 @@
 #!/bin/bash
 
 BRIGHTNESS=$(yad --title brightness --text="enter brightness level (1:255)" --text-align=center --entry)
-echo $BRIGHTNESS | pkexec tee /sys/class/leds/lcd-backlight/brightness
+
+if [[ $BRIGHTNESS -lt 1 || $BRIGHTNESS -gt 255 ]]; then
+    yad --warning --text="Brightness level must be between 1 and 255"
+else
+    echo $BRIGHTNESS | pkexec tee /sys/class/leds/lcd-backlight/brightness
+fi

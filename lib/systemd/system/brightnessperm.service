@@ -1,0 +1,11 @@
+[Unit]
+Description=Give the correct permission to the brightness node
+Requires=lxc@android.service
+After=phosh.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'chown manjaro /sys/class/leds/lcd-backlight/brightness'
+
+[Install]
+WantedBy=multi-user.target
